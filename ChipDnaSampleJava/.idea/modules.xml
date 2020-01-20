@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChipDnaMobile Demo.iml" filepath="$PROJECT_DIR$/ChipDnaMobile Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChipDnaMobileDemo.iml" filepath="$PROJECT_DIR$/ChipDnaMobileDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChipDnaMobileDemoForAndroid/ChipDnaMobileDemoForAndroid.iml" filepath="$PROJECT_DIR$/ChipDnaMobileDemoForAndroid/ChipDnaMobileDemoForAndroid.iml" />
+    </modules>
+  </component>
+</project>

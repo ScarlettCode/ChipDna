@@ -1,0 +1,6 @@
+﻿<metadata>
+
+  <attr path="/api/package[@name='com.creditcall.chipdnamobile']/class[@name='AbstractChipDnaMobileErrorCode']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.creditcall.chipdnamobile']/class[@name='Application']/method[@name='compareTo']/parameter[@name='application']" name="managedType">Java.Lang.Object </attr>
+
+</metadata>

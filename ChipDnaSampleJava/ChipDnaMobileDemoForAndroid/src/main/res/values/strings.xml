@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ChipDna Mobile Demo</string>
+    <string-array name="amount_values">
+        <item>Sale - $10.00</item>
+        <item>Decline - $5.00</item>
+        <item>Error - $1100.00</item>
+        <item>Voice Ref - $47.23</item>
+    </string-array>
+
+    <string name="ref">Ref</string>
+    <string name="user_reference">User Reference</string>
+    <string-array name="transaction_command_values">
+        <item>Auth</item>
+        <item>Confirm</item>
+        <item>Void</item>
+        <item>Transaction Info</item>
+    </string-array>
+</resources>

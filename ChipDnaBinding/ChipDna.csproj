@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E6A5E1F-4A97-4E86-801D-552400FD2D97}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChipDna</RootNamespace>
+    <AssemblyName>ChipDna</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+    <None Include="JavaDocs\package-list" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <InputJar Include="Jars\ChipDnaMobile.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ReferenceJar Include="Jars\CardEaseXMLClient.jar" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="JavaDocs\allclasses-frame.html" />
+    <Content Include="JavaDocs\allclasses-noframe.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\Application.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardHash.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardHash.Scope.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardHash.Source.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardSchemeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardSchemeIdEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\CardTypeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobile.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileAmountTypeEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileInitialisationException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileSerializer.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileTippingEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ChipDnaMobileUtils.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\Application.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardHash.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardHash.Scope.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardHash.Source.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardSchemeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardSchemeIdEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\CardTypeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobile.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileAmountTypeEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileInitialisationException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileSerializer.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileTippingEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ChipDnaMobileUtils.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ConfigurationErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\Currency.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\DeferredAuthorizationReason.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\DeviceStatus.DeviceStatusEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\DeviceStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IApplicationSelectionListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IAvailablePinPadsListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ICardDetailsListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IConfigurationUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IConnectAndConfigureFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IDeferredAuthorizationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IDeviceUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IForceAcceptanceListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IMiuraFile.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\InvalidInstanceException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IPartialApprovalListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IProcessReceiptFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ISignatureCaptureListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ISignatureVerificationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ISOAPListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ITmsUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ITransactionFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ITransactionUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IUnsolicitedMessageListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IUserNotificationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IVerifyIdListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\IVoiceReferralListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\OfflineRequest.CEMOfflineRequestType.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\OfflineRequest.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\Parameter.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ParameterKeys.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\Parameters.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ParameterValues.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\PaymentDeviceErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\PaymentMethod.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\PaymentPlatformStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\PaymentPlatformStatus.PaymentPlatformState.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ReceiptField.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ReceiptFieldInclusion.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ReceiptFieldKey.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\RequestQueueStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\ResultID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SettlementStateID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SignatureFormatEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SOAPExtendedTransaction.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SOAPTransaction.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SOAPTransactionHistory.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\SOAPTransactionStatistics.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\StateID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TerminalCAPublicKeys.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TerminalStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TmsStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TransactionErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TransactionTypeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\TransactionUpdate.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\UserNotification.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\class-use\VersionInformation.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ConfigurationErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\Currency.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\DeferredAuthorizationReason.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\DeviceStatus.DeviceStatusEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\DeviceStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IApplicationSelectionListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IAvailablePinPadsListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ICardDetailsListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IConfigurationUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IConnectAndConfigureFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IDeferredAuthorizationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IDeviceUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IForceAcceptanceListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IMiuraFile.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\InvalidInstanceException.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IPartialApprovalListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IProcessReceiptFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ISignatureCaptureListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ISignatureVerificationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ISOAPListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ITmsUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ITransactionFinishedListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ITransactionUpdateListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IUnsolicitedMessageListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IUserNotificationListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IVerifyIdListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\IVoiceReferralListener.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\OfflineRequest.CEMOfflineRequestType.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\OfflineRequest.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\package-frame.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\package-summary.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\package-tree.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\package-use.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\Parameter.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ParameterKeys.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\Parameters.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ParameterValues.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\PaymentDeviceErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\PaymentMethod.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\PaymentPlatformStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\PaymentPlatformStatus.PaymentPlatformState.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ReceiptField.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ReceiptFieldInclusion.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ReceiptFieldKey.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\RequestQueueStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\ResultID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SettlementStateID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SignatureFormatEnum.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SOAPExtendedTransaction.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SOAPTransaction.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SOAPTransactionHistory.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\SOAPTransactionStatistics.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\StateID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TerminalCAPublicKeys.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TerminalStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TmsStatus.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TransactionErrorCode.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TransactionTypeID.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\TransactionUpdate.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\UserNotification.html" />
+    <Content Include="JavaDocs\com\creditcall\chipdnamobile\VersionInformation.html" />
+    <Content Include="JavaDocs\constant-values.html" />
+    <Content Include="JavaDocs\deprecated-list.html" />
+    <Content Include="JavaDocs\help-doc.html" />
+    <Content Include="JavaDocs\index-all.html" />
+    <JavaDocIndex Include="JavaDocs\index.html" />
+    <Content Include="JavaDocs\overview-summary.html" />
+    <Content Include="JavaDocs\overview-tree.html" />
+    <Content Include="JavaDocs\script.js" />
+    <Content Include="JavaDocs\serialized-form.html" />
+    <Content Include="JavaDocs\stylesheet.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

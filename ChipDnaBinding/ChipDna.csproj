@@ -14,7 +14,7 @@
     <AssemblyName>ChipDna</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -55,13 +55,18 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\ChipDnaMobile.jar" />
+    <EmbeddedJar Include="Jars\ChipDnaMobile.jar" />
   </ItemGroup>
   <ItemGroup>
-    <ReferenceJar Include="Jars\CardEaseXMLClient.jar" />
+    <EmbeddedReferenceJar Include="Jars\CardEaseXMLClient.jar" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <PackageReference Include="Xamarin.JakeWharton.Timber">
+      <Version>4.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedReferenceJar Include="Jars\android-database-sqlcipher-4.0.1-sources.jar" />
     <Content Include="JavaDocs\allclasses-frame.html" />
     <Content Include="JavaDocs\allclasses-noframe.html" />
     <Content Include="JavaDocs\com\creditcall\chipdnamobile\Application.html" />

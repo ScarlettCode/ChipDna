@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Xamarin.ChipDnaMobile.Android</id>
+    <version>2.14</version>
+    <authors>ScarlettCode</authors>
+    <owners>ScarlettCode</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ScarlettCode/ChipDna</projectUrl>
+    <description>Xamarin Android bindings for www.nmi.com SDK's</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags></tags>
+  </metadata>
+</package>

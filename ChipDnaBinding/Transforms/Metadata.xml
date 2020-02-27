@@ -3,6 +3,6 @@
   <attr path="/api/package[@name='com.creditcall.chipdnamobile']/class[@name='AbstractChipDnaMobileErrorCode']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.creditcall.chipdnamobile']/class[@name='Application']/method[@name='compareTo']/parameter[@name='application']" name="managedType">Java.Lang.Object</attr>
 
-  <!--<remove-node path="/api/package[@name='com.creditcall.chipdnamobile']/interface[@name='IUnsolicitedMessageListener']" ></remove-node>-->
+  <remove-node path="/api/package[@name='com.creditcall.chipdnamobile']/interface[@name='IUnsolicitedMessageListener']" ></remove-node>
 
 </metadata>
